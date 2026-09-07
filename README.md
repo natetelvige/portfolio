@@ -10,7 +10,7 @@ HTML · CSS · JavaScript
 
 🔗 Live website
 
-[Visit my portfolio](https://natlamalfa.netlify.app))
+[Visit my portfolio](https://natlamalfa.netlify.app)
 
 ✧ About
 
