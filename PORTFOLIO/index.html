@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nat Lamalfa — Portfolio</title>
+  
+  <!-- FontAwesome for modern icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- THEME TOGGLE BUTTON -->
+  <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+    <i class="fa-solid fa-heart"></i>
+  </button>
+
+  <!-- NAVBAR -->
+ <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="#">Nat Lamalfa <span>✧</span></a>
+    </div>
+    
+    <!-- Hamburguer button for mobile -->
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about"><i class="fa-regular fa-user"></i> About</a></li>
+      <li><a href="#skills"><i class="fa-solid fa-code"></i> Skills</a></li>
+      <li><a href="#projects"><i class="fa-solid fa-folder-open"></i> Projects</a></li>
+      <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Background</a></li>
+      <li><a href="#contact"><i class="fa-regular fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+  <!-- HERO SECTION WITH PROFILE PICTURE -->
+  <header class="hero-section">
+    <div class="hero-container">
+      <div class="profile-frame">
+        <img src="IMG/pfp.jpe" alt="Natalia Lamalfa" class="profile-img">
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title">Hi, I’m Nat! ✦</h1>
+        <p class="hero-subtitle">Developer in Progress · Web & Game Development · Interactive Design</p>
+        <p class="hero-bio">
+          I enjoy building things with code, exploring design, and turning random ideas into little projects. I like learning by actually making things — whether that means coding a website, designing an interface, experimenting with a game mechanic, or starting a small project just because I had an idea.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> View Projects</a>
+          <a href="https://github.com/natetelvige" target="_blank" rel="noopener" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub ✧</a>
+          <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <h2>A Little About Me ❀</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I’m a student exploring foundations in programming, systems, and technology. Outside of formal coursework, I spend a lot of time learning through personal projects, experimenting with different tools, and seeing where an idea can take me.
+        </p>
+        <p>
+          I’m especially interested in the intersection between technology, design, and creativity. I like projects where I can combine logical problem-solving with making something that actually feels like mine.
+        </p>
+      </div>
+      <div class="about-card">
+        <h3>Languages & Beyond ✧</h3>
+        <p>
+          Technology isn’t the only thing I’m interested in. I love languages, illustration, gaming, and exploring different cultures and ways of communicating.
+        </p>
+        <div class="languages-pills">
+          <span class="lang-pill">Spanish (Native)</span>
+          <span class="lang-pill"></i> English</span>
+          <span class="lang-pill"></i> Italian</span>
+          <span class="lang-pill highlight"></i> Japanese (Studying)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS & TECH STACK -->
+  <section id="skills" class="section">
+    <h2>Tools & Technologies ✦</h2>
+    <div class="skills-wrapper">
+      <div class="skill-category">
+        <h3><i class="fa-solid fa-terminal"></i> Development</h3>
+        <div class="tech-stack">
+          <span class="badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+          <span class="badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+          <span class="badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+          <span class="badge"><i class="fa-brands fa-python"></i> Python</span>
+          <span class="badge"><i class="fa-brands fa-git-alt"></i> Git</span>
+          <span class="badge"><i class="fa-brands fa-github"></i> GitHub</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fa-solid fa-palette"></i> Design & Game Dev</h3>
+        <div class="tech-stack">
+          <span class="badge"><i class="fa-solid fa-gamepad"></i> Godot Engine</span>
+          <span class="badge"><i class="fa-brands fa-figma"></i> Figma</span>
+          <span class="badge"><i class="fa-solid fa-pen-nib"></i> UI/UX Design</span>
+          <span class="badge"><i class="fa-solid fa-border-all"></i> Pixel Art</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section">
+    <h2>What I Like Building ❀</h2>
+    
+    <div class="filter-container">
+      <a href="https://github.com/natetelvige?tab=repositories" target="_blank" rel="noopener" class="filter-btn active"><i class="fa-solid fa-layer-group"></i> All Repos ✧</a>
+      <a href="https://github.com/natetelvige" target="_blank" rel="noopener" class="filter-btn"><i class="fa-solid fa-laptop-code"></i> Web</a>
+      <a href="https://github.com/natetelvige" target="_blank" rel="noopener" class="filter-btn"><i class="fa-solid fa-gamepad"></i> Games</a>
+      <a href="https://github.com/natetelvige" target="_blank" rel="noopener" class="filter-btn"><i class="fa-solid fa-wand-magic-sparkles"></i> Design</a>
+      <a href="https://github.com/natetelvige" target="_blank" rel="noopener" class="filter-btn"><i class="fa-solid fa-vial"></i> Experiments</a>
+    </div>
+
+    <div class="grid-container">
+      <div class="card">
+        <div>
+          <div class="card-tag"><i class="fa-solid fa-laptop-code"></i> Web ✧</div>
+          <h3>Interactive Websites</h3>
+          <p>Websites and interactive experiences built using HTML, CSS, and JavaScript, focusing on responsiveness and clean aesthetic design.</p>
+        </div>
+        <a href="https://github.com/natetelvige" target="_blank" rel="noopener" class="card-link">View Repos <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-tag"><i class="fa-solid fa-gamepad"></i> Games ✧</div>
+          <h3>Game Mechanics</h3>
+          <p>Small games and experiments with Godot, exploring everything from gameplay mechanics to world-building and character interactions.</p>
+        </div>
+        <a href="https://github.com/natetelvige" target="_blank" rel="noopener" class="card-link">View Repos <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Design ✧</div>
+          <h3>Visual & UI Design</h3>
+          <p>User interface layouts, visual assets, illustration, pixel art, and digital graphics that bring creative concepts to life.</p>
+        </div>
+        <a href="https://github.com/natetelvige" target="_blank" rel="noopener" class="card-link">View Projects <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-tag"><i class="fa-solid fa-vial"></i> Experiments ✧</div>
+          <h3>Little Experiments</h3>
+          <p>Small apps, random ideas, and technical tests that started with a simple question: "I wonder if I can make this?"</p>
+        </div>
+        <a href="https://github.com/natetelvige" target="_blank" rel="noopener" class="card-link">View Repos <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BACKGROUND SECTION -->
+  <section id="experience" class="section">
+    <h2>A Bit of My Background ✦</h2>
+    <div class="background-content">
+      <p>
+        Before focusing on technology, I gained experience in administrative management and customer service. I worked with scheduling, documentation, client communication, organization, and day-to-day problem solving.
+      </p>
+      <p>
+        That experience taught me skills that I still use when working on technical projects: staying organized, communicating clearly, paying attention to details, and figuring things out when something doesn’t go according to plan.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section">
+    <h2>Currently & Contact ♡</h2>
+    <p>
+      I’m learning, experimenting, and building. Some projects turn out great, some become learning experiences, and some are abandoned halfway through because I had another idea.
+    </p>
+    <p>Welcome to my little corner of the internet. Let's connect!</p>
+
+    <div class="contact-links">
+      <a class="contact-button" href="https://www.linkedin.com/in/natalia-lamalfa" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn: Natalia Lamalfa</a>
+      <a class="contact-button" href="https://github.com/natetelvige" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub: @natetelvige</a>
+      <a class="contact-button" href="https://instagram.com/bynatlamalfa" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram: @bynatlamalfa</a>
+      <a class="contact-button" href="https://wa.me/541141421436" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </div>
+    
+  <footer>
+    <p>Designed & Built by Natalia Lamalfa ✦</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

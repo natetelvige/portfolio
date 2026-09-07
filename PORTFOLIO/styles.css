@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #0f1419 0%, #1a232a 100%);
+  color: #e2e8f0;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+/* Tarjeta Principal */
+.invitation-card {
+  background: rgba(20, 26, 33, 0.95);
+  border: 1px solid #d4af37;
+  padding: 2.5rem 1.8rem;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.1);
+  max-width: 460px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 1.2s ease-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.subtitle-top {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+  color: #d4af37;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Título con degradado corregido */
+.names {
+  font-family: 'Cinzel', serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #d4af37;
+  letter-spacing: 1px;
+  background: linear-gradient(45deg, #ffffff, #d4af37);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle-bottom {
+  font-size: 0.85rem;
+  color: #a0aec0;
+  margin-top: 6px;
+  font-weight: 300;
+}
+
+.ornament {
+  color: #d4af37;
+  margin: 20px 0;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Galería de Fotos */
+.photo-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.photo-container {
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  height: 140px;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.photo-container:hover .photo {
+  transform: scale(1.08);
+}
+
+/* Detalle del Evento */
+.event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 16px;
+  border-radius: 10px;
+  border-left: 3px solid #d4af37;
+}
+
+.detail-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.detail-box .icon {
+  font-size: 1.1rem;
+}
+
+.detail-info strong {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #d4af37;
+}
+
+.detail-info p {
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+/* Formulario RSVP */
+.rsvp-container h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 18px;
+  font-weight: 400;
+}
+
+.input-group {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  color: #cbd5e0;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  background-color: #11161d;
+  border: 1px solid #2d3748;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Legibilidad en desplegables */
+select option {
+  background-color: #11161d;
+  color: #ffffff;
+}
+
+input:focus, select:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.2);
+}
+
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
+  color: #000000;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 8px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.hidden {
+  display: none;
+}
+
+#status-message {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid #d4af37;
+  color: #ffffff;
+}
